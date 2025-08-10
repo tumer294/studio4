@@ -1,28 +1,25 @@
 
 {
-  "name": "BANG - İslami Sosyal Medya",
+  "name": "BANG - İslami Sosyal Medya Platformu",
   "short_name": "BANG",
   "description": "Modern İslami değerlerle buluşan sosyal medya platformu",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#17633D",
+  "theme_color": "#4ade80",
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/images/icon-192.png",
+      "src": "/icon-192.png",
       "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "maskable any"
+      "type": "image/png"
     },
     {
-      "src": "/images/icon-512.png",
-      "sizes": "512x512", 
-      "type": "image/png",
-      "purpose": "maskable any"
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
   "categories": ["social", "lifestyle"],
-  "lang": "tr",
-  "dir": "ltr"
+  "lang": "tr"
 }

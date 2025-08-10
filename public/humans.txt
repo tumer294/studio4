@@ -1,0 +1,12 @@
+
+/* TEAM */
+Developer: BANG Team
+Contact: contact@bang-social.com
+Location: Turkey
+
+/* SITE */
+Last update: 2025/01/10
+Language: Turkish / English / Arabic
+Standards: HTML5, CSS3, JavaScript ES6+
+Components: React, Next.js, TypeScript
+Software: Visual Studio Code

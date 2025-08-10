@@ -904,10 +904,10 @@ export default function ProfilePage() {
             </TabsContent>
             <TabsContent value="replies" className="mt-4 space-y-4">
                 {userReplies.length > 0 ? (
-                  userReplies.map(postWithUser => (
-                    <div key={postWithUser.id} className="relative">
+                  userReplies.map((postWithUser, index) => (
+                    <div key={`reply-${postWithUser.id}-${index}`} className="relative">
                       <div className="absolute left-4 top-4 text-xs text-muted-foreground bg-secondary px-2 py-1 rounded z-10">
-                        {profileUser?.name} yanıtladı
+                        Yanıtladı
                       </div>
                       <PostCard post={postWithUser} user={postWithUser.author} />
                     </div>
@@ -920,20 +920,14 @@ export default function ProfilePage() {
             </TabsContent>
             <TabsContent value="likes" className="mt-4 space-y-4">
                 {isOwnProfile ? (
-                  likedPosts.length > 0 ? (
-                    likedPosts.map(postWithUser => (
-                      <div key={postWithUser.id} className="relative">
-                        <div className="absolute left-4 top-4 text-xs text-muted-foreground bg-secondary px-2 py-1 rounded z-10">
-                          Beğendin
-                        </div>
-                        <PostCard post={postWithUser} user={postWithUser.author} />
+                  likedPosts.map((postWithUser, index) => (
+                    <div key={`liked-${postWithUser.id}-${index}`} className="relative">
+                      <div className="absolute left-4 top-4 text-xs text-muted-foreground bg-secondary px-2 py-1 rounded z-10">
+                        Beğendin
                       </div>
-                    ))
-                  ) : (
-                    <div className="text-center py-12 text-muted-foreground rounded-lg border">
-                      <p>{t.youHaventLikedYet}</p>
+                      <PostCard post={postWithUser} user={postWithUser.author} />
                     </div>
-                  )
+                  ))
                 ) : (
                   <div className="text-center py-12 text-muted-foreground rounded-lg border">
                     <p>{t.likedPostsArePrivate}</p>

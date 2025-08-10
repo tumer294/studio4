@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://bang-social.com'),
+  metadataBase: new URL('https://GERCEK_DOMAIN_ADRESINIZ.com'),
   alternates: {
     canonical: '/',
     languages: {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'tr_TR',
-    url: 'https://bang-social.com',
+    url: 'https://GERCEK_DOMAIN_ADRESINIZ.com',
     title: 'BANG - İslami Sosyal Medya Platformu',
     description: 'Modern İslami değerlerle buluşan sosyal medya platformu. Müslüman toplulukla bağlantı kurun.',
     siteName: 'BANG',
@@ -102,9 +102,9 @@ export const metadata: Metadata = {
   },
   manifest: '/site.webmanifest',
   other: {
-    'google-site-verification': 'your-google-verification-code',
-    'yandex-verification': 'your-yandex-verification-code',
-    'msvalidate.01': 'your-bing-verification-code',
+    'google-site-verification': 'BURAYA_GOOGLE_KONSOLDAN_ALDIGINIZ_KODU_YAPISTIRIN',
+    'yandex-verification': 'BURAYA_YANDEX_WEBMASTER_KODUNU_YAPISTIRIN',
+    'msvalidate.01': 'BURAYA_BING_WEBMASTER_KODUNU_YAPISTIRIN',
     'facebook-domain-verification': 'your-facebook-verification-code',
   },
   verification: {
@@ -112,7 +112,7 @@ export const metadata: Metadata = {
     yandex: 'your-yandex-verification-code',
     yahoo: 'your-yahoo-verification-code',
     other: {
-      me: ['mailto:contact@bang-social.com', 'https://bang-social.com'],
+      me: ['mailto:GERCEK_EMAIL_ADRESINIZ@domain.com', 'https://bang-social.com'],
     },
   },
 };

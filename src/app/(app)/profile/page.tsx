@@ -640,8 +640,8 @@ export default function PersonalProfilePage() {
             </TabsContent>
             <TabsContent value="likes" className="mt-4 space-y-4">
                 {likedPosts.length > 0 ? (
-                  likedPosts.map(postWithUser => (
-                    <div key={postWithUser.id} className="relative">
+                  likedPosts.map((postWithUser, index) => (
+                    <div key={`own-liked-${postWithUser.id}-${index}`} className="relative">
                       <div className="absolute left-4 top-4 text-xs text-muted-foreground bg-secondary px-2 py-1 rounded z-10">
                         Beğendiniz
                       </div>
@@ -656,8 +656,8 @@ export default function PersonalProfilePage() {
             </TabsContent>
             <TabsContent value="saved" className="mt-4 space-y-4">
                 {savedPostsWithUsers.length > 0 ? (
-                    savedPostsWithUsers.map(postWithUser => (
-                        <PostCard key={postWithUser.id} post={postWithUser} user={postWithUser.author} />
+                    savedPostsWithUsers.map((postWithUser, index) => (
+                        <PostCard key={`saved-${postWithUser.id}-${index}`} post={postWithUser} user={postWithUser.author} />
                     ))
                 ) : (
                     <div className="text-center py-12 text-muted-foreground rounded-lg border">
